@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+section{
+    display: inline-block;
+    width: 100%;
+}
+header{
+    height: 100vh;
+    background: #231d1d;
+}
+nav ul li a{
+    font-size: 1.5rem;
+}
+nav ul li a:hover{
+    color: #FFEB3B;
+}
+.nav-comp {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+header h1, span{
+    color: #fff;
+}
+header h1{
+    font-size: 5.5rem;
+    margin: 0;
+}
+header h1:after{
+    content: "";
+    display: inline-block;
+    margin: 0 auto;
+    background: #fff;
+    position: absolute;
+    height: 4px;
+    top: 88px;
+    left: 0;
+    right: 0;
+    width: 720px;
+}
+header span{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+header nav{
+    background: none;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+}
+header nav ul li{
+    padding-right: 1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+#intro {
+position: absolute;
+left: 0;
+top: 50%;
+padding: 0 20px;
+width: 100%;
+text-align: center;
+}
+.avatar-thumb img{
+    max-width: 230px;
+    border-radius: 100%;
+}
+.avatar-thumb {
+    padding-top: 4%;
+}
+.about-me p a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #01bca2;
+}
+p{
+    margin-top: 4%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+.skills{
+    background: #241d1d;
+}
+.skills h2{
+    text-align: center;
+    color: #fff;
+}
+.skills span{
+    font-size: 2.4em;
+    color: #fff;
+}
+.skills ul li {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+    padding-left: 7em;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+.modality {
+    text-align: center;
+}
+.thumbs-projects {
+    position: relative;
+}
+.thumbs-projects:hover .content-projects{
+ display: block
+}
+.thumbs-projects img {
+    max-width: 100%;
+}
+.content-projects {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: #00000080;
+    z-index: 1;
+    padding: 1em;
+    height: 100%;
+}
+.content-projects span{
+    color: #fff;
+    font-size: 3em;
+}
+.content-projects p{
+    color: #fff;
+}
+.content-projects a{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.content-projects .row{
+    margin:0
+}
+
+.projects-thumbs {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.projects-thumbs img {
+    max-width: 100%;
+}
+
+.projects-thumbs:hover .overlay{
+    display: block
+}
+.overlay {
+    background: #000000da;
+    height: 97.5%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: none;
+    padding-top: 15%;
+}
+.overlay small{
+    font-size: 25px;
+    color: #fff;
+    display: inherit;
+}
+.overlay button{
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 5px 25px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+.overlay button a{
+    color: #fff;
+}
+section#contato {
+    background: #f5f5f5cc;
+}
+.border-shadow{
+    box-shadow: 0px 8px 10px #0000001f;
+}
+@media screen and (max-width: 425px){
+    .skills ul li {
+        padding-left: 0
+    }
+    .avatar-thumb {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    header nav ul li {
+        padding-right: 0;
+    }
+}
+
+.cortextoinfo {
+    color: #FF4500 !important;
+}
+
