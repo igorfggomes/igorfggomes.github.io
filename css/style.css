@@ -115,7 +115,7 @@ p {
 
 .projects-thumbs {
   position: relative;
-  margin-bottom: 15px
+  width: fit-content;
 }
 
 .projects-thumbs img {
@@ -123,7 +123,7 @@ p {
 }
 
 .projects-thumbs:hover .overlay {
-  display: block
+  display: block;
 }
 
 .overlay {
