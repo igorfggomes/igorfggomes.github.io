@@ -19,11 +19,12 @@
   <div class="nav-container">
     <a href="#home" class="nav-logo">IF<span class="accent">.</span></a>
     <ul class="nav-links">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a href="#experience">Experiência</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+      <li><a href="#stack" data-i18n="nav-stack">Stack</a></li>
+      <li><a href="#experience" data-i18n="nav-experience">Experiência</a></li>
+      <li><a href="#contact" data-i18n="nav-contact">Contato</a></li>
     </ul>
+    <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">EN</button>
   </div>
 </nav>
 
@@ -34,14 +35,11 @@
   <div class="hero-orb orb-2"></div>
   <div class="hero-content fade-in">
     <h1 class="hero-name">Igor Franklin</h1>
-    <p class="hero-title">Desenvolvedor <span class="gradient-text">Full Stack Pleno</span></p>
-    <p class="hero-desc">
-      Especializado em ERPs, APIs de alta performance e automação de processos.<br>
-      React · Node.js · TypeScript · React Native
-    </p>
+    <p class="hero-title" data-i18n="hero-title">Desenvolvedor <span class="gradient-text">Full Stack Pleno</span></p>
+    <p class="hero-desc" data-i18n="hero-desc">Especializado em ERPs, APIs de alta performance e automação de processos.<br>React · Node.js · TypeScript · React Native</p>
     <div class="hero-ctas">
-      <a href="https://www.linkedin.com/in/igorfggomes/" target="_blank" class="btn btn-primary">Ver LinkedIn</a>
-      <a href="https://api.whatsapp.com/send?phone=5535991923916&text=Oi%2C+Igor%21" target="_blank" class="btn btn-outline">Falar comigo</a>
+      <a href="https://www.linkedin.com/in/igorfggomes/" target="_blank" class="btn btn-primary" data-i18n="btn-linkedin">Ver LinkedIn</a>
+      <a href="https://api.whatsapp.com/send?phone=5535991923916&text=Oi%2C+Igor%21" target="_blank" class="btn btn-outline" data-i18n="btn-contact">Falar comigo</a>
     </div>
   </div>
 </section>
@@ -49,7 +47,7 @@
 <!-- ABOUT -->
 <section id="about" class="section about">
   <div class="container">
-    <h2 class="section-title fade-in">Sobre <span class="gradient-text">mim</span></h2>
+    <h2 class="section-title fade-in" data-i18n="about-title">Sobre <span class="gradient-text">mim</span></h2>
     <div class="about-grid fade-in">
       <div class="about-photo">
         <div class="photo-wrapper">
@@ -57,21 +55,21 @@
         </div>
       </div>
       <div class="about-text">
-        <p>Olá! Sou desenvolvedor Full Stack com foco em construir sistemas que resolvem problemas reais. Ao longo da minha carreira trabalhei com ERPs de alta complexidade, integrações fiscais (NF-e, NFC-e, SAT) e APIs utilizadas em produção por grandes equipes.</p>
-        <p>Hoje atuo como referência técnica na Work Inovação, onde lidero code reviews, estruturo design systems e entrego melhorias com impacto mensurável: <strong>60% de redução no tempo de resposta de APIs</strong>, <strong>80% de eliminação de trabalho manual</strong> com Python e <strong>40% de aumento na estabilidade</strong> do sistema.</p>
-        <p>Sou movido por código limpo, arquitetura bem pensada e colaboração. Sempre aberto a novos desafios. 🚀</p>
+        <p data-i18n="about-p1">Olá! Sou desenvolvedor Full Stack com foco em construir sistemas que resolvem problemas reais. Ao longo da minha carreira trabalhei com ERPs de alta complexidade, integrações fiscais (NF-e, NFC-e, SAT) e APIs utilizadas em produção por grandes equipes.</p>
+        <p data-i18n="about-p2">Hoje atuo como referência técnica na Work Inovação, onde lidero code reviews, estruturo design systems e entrego melhorias com impacto mensurável: <strong>60% de redução no tempo de resposta de APIs</strong>, <strong>80% de eliminação de trabalho manual</strong> com Python e <strong>40% de aumento na estabilidade</strong> do sistema.</p>
+        <p data-i18n="about-p3">Sou movido por código limpo, arquitetura bem pensada e colaboração. Sempre aberto a novos desafios. 🚀</p>
         <div class="about-info">
           <div class="info-item">
-            <span class="info-label">Localização</span>
+            <span class="info-label" data-i18n="info-location-label">Localização</span>
             <span class="info-value">São Paulo, SP</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Formação</span>
-            <span class="info-value">Eng. de Software — UniFACEF</span>
+            <span class="info-label" data-i18n="info-education-label">Formação</span>
+            <span class="info-value" data-i18n="info-education-value">Eng. de Software — UniFACEF</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Inglês</span>
-            <span class="info-value">Intermediário (B1)</span>
+            <span class="info-label" data-i18n="info-english-label">Inglês</span>
+            <span class="info-value" data-i18n="info-english-value">Intermediário (B1)</span>
           </div>
         </div>
       </div>
@@ -82,11 +80,11 @@
 <!-- STACK -->
 <section id="stack" class="section stack">
   <div class="container">
-    <h2 class="section-title fade-in">Stack <span class="gradient-text">técnica</span></h2>
+    <h2 class="section-title fade-in" data-i18n="stack-title">Stack <span class="gradient-text">técnica</span></h2>
     <div class="stack-grid">
 
       <div class="stack-card fade-in">
-        <h3 class="stack-category">Front-end</h3>
+        <h3 class="stack-category" data-i18n="stack-cat-1">Front-end</h3>
         <div class="tech-list">
           <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
           <div class="tech-item"><i class="devicon-nextjs-plain"></i><span>Next.js</span></div>
@@ -99,7 +97,7 @@
       </div>
 
       <div class="stack-card fade-in">
-        <h3 class="stack-category">Back-end</h3>
+        <h3 class="stack-category" data-i18n="stack-cat-2">Back-end</h3>
         <div class="tech-list">
           <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
           <div class="tech-item"><i class="devicon-express-original"></i><span>Express</span></div>
@@ -111,7 +109,7 @@
       </div>
 
       <div class="stack-card fade-in">
-        <h3 class="stack-category">DevOps & Cloud</h3>
+        <h3 class="stack-category" data-i18n="stack-cat-3">DevOps & Cloud</h3>
         <div class="tech-list">
           <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
           <div class="tech-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS S3</span></div>
@@ -123,7 +121,7 @@
       </div>
 
       <div class="stack-card fade-in">
-        <h3 class="stack-category">Metodologias</h3>
+        <h3 class="stack-category" data-i18n="stack-cat-4">Metodologias</h3>
         <div class="tech-list">
           <div class="tech-item"><div class="tech-badge">CC</div><span>Clean Code</span></div>
           <div class="tech-item"><div class="tech-badge">SO</div><span>SOLID</span></div>
@@ -141,21 +139,21 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section experience">
   <div class="container">
-    <h2 class="section-title fade-in">Experiência <span class="gradient-text">profissional</span></h2>
+    <h2 class="section-title fade-in" data-i18n="exp-title">Experiência <span class="gradient-text">profissional</span></h2>
     <div class="timeline">
 
       <div class="exp-card fade-in">
         <div class="exp-header">
           <div>
             <h3 class="exp-company">Work Inovação</h3>
-            <p class="exp-role">Desenvolvedor Full Stack Pleno</p>
+            <p class="exp-role" data-i18n="exp1-role">Desenvolvedor Full Stack Pleno</p>
           </div>
           <div class="exp-meta">
-            <span class="exp-period">Mai/2025 – Presente</span>
+            <span class="exp-period" data-i18n="exp1-period">Mai/2025 – Presente</span>
             <span class="exp-location">Campinas, SP</span>
           </div>
         </div>
-        <ul class="exp-bullets">
+        <ul class="exp-bullets" data-i18n="exp1-bullets">
           <li>Atuei como referência técnica em ERP de alta complexidade com módulos fiscais (NF-e, NFC-e, SAT), financeiro e vendas, utilizando React, TypeScript e Node.js</li>
           <li>Reduzi o tempo de resposta de APIs REST e GraphQL em <strong class="metric">60%</strong> via refatoração de endpoints e otimização de queries</li>
           <li>Implementei biblioteca de componentes com Design System, eliminando retrabalho entre squads e reduzindo bugs em produção</li>
@@ -171,14 +169,14 @@
         <div class="exp-header">
           <div>
             <h3 class="exp-company">Work Inovação</h3>
-            <p class="exp-role">Desenvolvedor Full Stack Júnior</p>
+            <p class="exp-role" data-i18n="exp2-role">Desenvolvedor Full Stack Júnior</p>
           </div>
           <div class="exp-meta">
-            <span class="exp-period">Out/2022 – Mai/2025</span>
+            <span class="exp-period" data-i18n="exp2-period">Out/2022 – Mai/2025</span>
             <span class="exp-location">Campinas, SP</span>
           </div>
         </div>
-        <ul class="exp-bullets">
+        <ul class="exp-bullets" data-i18n="exp2-bullets">
           <li>Desenvolvi módulos estratégicos do ERP (Fiscal, Vendas, Financeiro e Produtos) com React, TypeScript e Node.js</li>
           <li>Automatizei processos financeiros com Python, eliminando <strong class="metric">80%</strong> do tempo operacional manual da equipe</li>
           <li>Otimizei APIs REST e a integração front-end/back-end, reduzindo tempo de resposta em <strong class="metric">60%</strong></li>
@@ -193,14 +191,14 @@
         <div class="exp-header">
           <div>
             <h3 class="exp-company">CleanDev</h3>
-            <p class="exp-role">Desenvolvedor Full Stack Júnior</p>
+            <p class="exp-role" data-i18n="exp3-role">Desenvolvedor Full Stack Júnior</p>
           </div>
           <div class="exp-meta">
-            <span class="exp-period">Set/2021 – Set/2022</span>
+            <span class="exp-period" data-i18n="exp3-period">Set/2021 – Set/2022</span>
             <span class="exp-location">Franca, SP</span>
           </div>
         </div>
-        <ul class="exp-bullets">
+        <ul class="exp-bullets" data-i18n="exp3-bullets">
           <li>Desenvolvi sistemas ERP para clínicas, prefeituras e academias com React, TypeScript e React Native</li>
           <li>Construí APIs REST com Node.js, Express e Sequelize integradas ao MySQL</li>
           <li>Otimizei módulos críticos com ganho de <strong class="metric">15%</strong> em performance de processamento</li>
@@ -217,8 +215,8 @@
 <!-- CONTACT -->
 <section id="contact" class="section contact">
   <div class="container">
-    <h2 class="section-title fade-in">Vamos <span class="gradient-text">conversar?</span></h2>
-    <p class="contact-desc fade-in">Aberto a novas oportunidades, projetos e networking.</p>
+    <h2 class="section-title fade-in" data-i18n="contact-title">Vamos <span class="gradient-text">conversar?</span></h2>
+    <p class="contact-desc fade-in" data-i18n="contact-desc">Aberto a novas oportunidades, projetos e networking.</p>
     <div class="contact-grid fade-in">
 
       <a href="https://www.linkedin.com/in/igorfggomes/" target="_blank" class="contact-card">
@@ -254,7 +252,7 @@
 </section>
 
 <footer class="footer">
-  <p>Desenvolvido por <span class="gradient-text">Igor Franklin</span> · São Paulo, SP</p>
+  <p data-i18n="footer-text">Desenvolvido por <span class="gradient-text">Igor Franklin</span> · São Paulo, SP</p>
 </footer>
 
 <script src="js/scripts.js"></script>

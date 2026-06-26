@@ -136,6 +136,26 @@ img { display: block; max-width: 100%; }
 
 .nav-links a:hover::after { width: 100%; }
 
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font);
+  letter-spacing: 0.8px;
+  transition: var(--transition);
+}
+
+.lang-toggle:hover {
+  border-color: var(--indigo);
+  color: var(--text);
+  background: rgba(99, 102, 241, 0.08);
+}
+
 /* ========================
    HERO
 ======================== */
