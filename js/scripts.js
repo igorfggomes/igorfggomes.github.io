@@ -120,7 +120,8 @@ let currentLang = localStorage.getItem('portfolio-lang') || 'pt';
 
 function applyLang(lang) {
   currentLang = lang;
-  document.getElementById('lang-toggle').textContent = lang === 'pt' ? 'EN' : 'PT';
+  document.getElementById('lang-pt').classList.toggle('active', lang === 'pt');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 
   document.querySelectorAll('[data-i18n]').forEach(el => {

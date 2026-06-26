@@ -137,23 +137,44 @@ img { display: block; max-width: 100%; }
 .nav-links a:hover::after { width: 100%; }
 
 .lang-toggle {
-  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(30, 41, 59, 0.7);
   border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: 6px 12px;
   cursor: pointer;
   font-family: var(--font);
-  letter-spacing: 0.8px;
   transition: var(--transition);
 }
 
 .lang-toggle:hover {
-  border-color: var(--indigo);
-  color: var(--text);
-  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.45);
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.lang-opt {
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: var(--text-dim);
+  -webkit-text-fill-color: var(--text-dim);
+  transition: var(--transition);
+}
+
+.lang-opt.active {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.lang-divider {
+  font-size: 0.65rem;
+  color: var(--border);
+  -webkit-text-fill-color: var(--border);
 }
 
 /* ========================
