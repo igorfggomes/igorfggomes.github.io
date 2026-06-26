@@ -72,7 +72,7 @@ const translations = {
 
 ## Contact
 
-| | |
+| Platform | Link |
 |---|---|
 | LinkedIn | [linkedin.com/in/igorfggomes](https://linkedin.com/in/igorfggomes) |
 | Email | igor.fggomes@hotmail.com |
