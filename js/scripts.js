@@ -1,11 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    particleground(document.getElementById('particles'), {
-      dotColor: '#FFFFFF',
-      lineColor: '#FF4500',
-      density: 12000,
-      particleRadius: 7,
-      minSpeedX: 0.1,
-      directionX: 'center',
-      lineWidth: 1
-    });
-}, false);
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Fade in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
